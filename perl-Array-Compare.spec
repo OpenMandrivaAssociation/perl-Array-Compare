@@ -13,7 +13,6 @@ Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Array/%{module}-%{version
 Url:            http://search.cpan.org/dist/%{module}
 Buildrequires:	perl(Module::Build)
 BuildArch: 	noarch
-BuildRoot: 	%{_tmppath}/%{name}-buildroot
 
 %description 
 If you have two arrays and you want to know if they are the same or different,
