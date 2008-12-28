@@ -1,6 +1,6 @@
 %define module  Array-Compare
 %define name	perl-%{module}
-%define version 1.16
+%define version 1.17
 %define release %mkrel 1
 
 Name: 		%{name}
