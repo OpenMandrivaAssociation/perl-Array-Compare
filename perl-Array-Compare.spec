@@ -1,26 +1,26 @@
-%define module  Array-Compare
-%define name	perl-%{module}
-%define version 1.17
-%define release %mkrel 1
+%define upstream_name    Array-Compare
+%define upstream_version 1.17
 
-Name: 		%{name}
-Version: 	%{version}
-Release: 	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary: 	Perl extension for comparing arrays
-License: 	GPL or Artistic
+License: 	GPL+ or Artistic
 Group: 		Development/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Array/%{module}-%{version}.tar.bz2
-Url:            http://search.cpan.org/dist/%{module}
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Array/%{upstream_name}-%{upstream_version}.tar.bz2
+
 Buildrequires:	perl(Module::Build)
 BuildArch: 	noarch
-BuildRoot: 	%{_tmppath}/%{name}-buildroot
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description 
 If you have two arrays and you want to know if they are the same or different,
 then Array::Compare will be useful to you.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Build.PL installdirs=vendor
@@ -41,4 +41,3 @@ rm -rf %{buildroot}
 %doc Changes README
 %{perl_vendorlib}/Array
 %{_mandir}/*/*
-
