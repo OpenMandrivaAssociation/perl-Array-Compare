@@ -1,5 +1,5 @@
 %define upstream_name    Array-Compare
-%define upstream_version 1.17
+%define upstream_version 2.01
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary: 	Perl extension for comparing arrays
 License: 	GPL+ or Artistic
 Group: 		Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Array/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Array/%{upstream_name}-%{upstream_version}.tar.gz
 
 Buildrequires:	perl(Module::Build)
 BuildArch: 	noarch
