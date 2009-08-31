@@ -11,8 +11,8 @@ Group: 		Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Array/%{upstream_name}-%{upstream_version}.tar.gz
 
-Buildrequires:	perl(Module::Build)
-Buildrequires:	perl(Moose)
+BuildRequires: perl(Module::Build)
+BuildRequires: perl(Moose)
 
 BuildArch: 	noarch
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}
