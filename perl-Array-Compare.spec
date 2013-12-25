@@ -11,6 +11,7 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Array/Array-Compare-%{upstream_version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
+BuildRequires: perl(Test::NoWarnings)
 BuildRequires:	perl(Module::Build)
 BuildRequires:	perl(Moose)
 
