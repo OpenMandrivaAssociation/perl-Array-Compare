@@ -1,14 +1,14 @@
 %define upstream_name    Array-Compare
-%define upstream_version 2.02
+%define upstream_version 2.11
 
 Summary:	Perl extension for comparing arrays
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Array/Array-Compare-%{upstream_version}.tar.gz
+Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Array/%{upstream_name}-%{upstream_version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
 BuildRequires: perl(Test::NoWarnings)
@@ -36,5 +36,3 @@ then Array::Compare will be useful to you.
 %doc Changes README
 %{perl_vendorlib}/Array
 %{_mandir}/man3/*
-
-
