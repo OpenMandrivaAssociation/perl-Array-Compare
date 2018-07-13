@@ -9,6 +9,7 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/D/DA/DAVECROSS/Array-Compare-v%{version}.tar.gz
 BuildArch:	noarch
+BuildRequires:	perl(Moo)
 BuildRequires:	perl-devel
 BuildRequires:	perl(Module::Build)
 BuildRequires:	perl(Moose)
