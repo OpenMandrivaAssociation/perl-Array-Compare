@@ -3,7 +3,7 @@
 Summary:	Perl extension for comparing arrays
 Name:		perl-%{upstream_name}
 Version:	3.0.1
-Release:	2
+Release:	3
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
