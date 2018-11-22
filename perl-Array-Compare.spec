@@ -3,10 +3,10 @@
 Summary:	Perl extension for comparing arrays
 Name:		perl-%{upstream_name}
 Version:	3.0.1
-Release:	3
+Release:	4
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		http://metacpan.org/pod/Array::Compare
 Source0:	http://search.cpan.org/CPAN/authors/id/D/DA/DAVECROSS/Array-Compare-v%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Moo)
