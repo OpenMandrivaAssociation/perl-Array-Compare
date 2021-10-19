@@ -1,9 +1,9 @@
-%define upstream_name    Array-Compare
+%define upstream_name Array-Compare
 
 Summary:	Perl extension for comparing arrays
 Name:		perl-%{upstream_name}
 Version:	3.0.1
-Release:	4
+Release:	5
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://metacpan.org/pod/Array::Compare
@@ -22,10 +22,10 @@ If you have two arrays and you want to know if they are the same or different,
 then Array::Compare will be useful to you.
 
 %prep
-%setup -qn %{upstream_name}-v%{version}
+%autosetup -n %{upstream_name}-v%{version} -p1
 
 %build
-%__perl Build.PL installdirs=vendor
+perl Build.PL installdirs=vendor
 ./Build
 
 %install
@@ -37,6 +37,4 @@ then Array::Compare will be useful to you.
 %files
 %doc Changes README
 %{perl_vendorlib}/Array
-%{_mandir}/man3/*
-
-
+%doc %{_mandir}/man3/*
