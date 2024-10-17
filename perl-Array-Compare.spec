@@ -6,7 +6,7 @@ Version:	3.0.8
 Release:	2
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://metacpan.org/pod/Array::Compare
+Url:		https://metacpan.org/pod/Array::Compare
 Source0:	http://search.cpan.org/CPAN/authors/id/D/DA/DAVECROSS/Array-Compare-v%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Moo)
